@@ -1,5 +1,5 @@
 
-import { ShieldCheck, Lock, Code } from "lucide-react";
+import { Award, Star } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -11,16 +11,16 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-1/2 space-y-6 animate-fade-in">
             <div className="inline-block px-3 py-1 bg-security-primary/10 rounded-full">
-              <p className="text-security-primary text-sm font-medium">Senior Application Security Engineer</p>
+              <p className="text-security-primary text-sm font-medium">HERO</p>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-security-dark">
-              Securing Applications,
-              <span className="block security-gradient bg-clip-text text-transparent">One Line at a Time</span>
+              Hi, I'm 
+              <span className="block security-gradient bg-clip-text text-transparent ml-2">HERO</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-xl">
-              I help organizations build secure software by identifying vulnerabilities and implementing robust security measures.
+              A Senior Application Security Engineer dedicated to building robust and secure software solutions.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
@@ -45,19 +45,19 @@ const Hero = () => {
               <div className="w-full aspect-square rounded-3xl bg-gradient-to-br from-security-primary/10 to-security-accent/20 flex items-center justify-center overflow-hidden shadow-xl">
                 {/* This can be replaced with an actual profile image */}
                 <div className="w-3/4 h-3/4 flex items-center justify-center">
-                  <ShieldCheck className="w-full h-full text-security-primary/60" />
+                  <Award className="w-full h-full text-security-primary/60" />
                 </div>
               </div>
               
               {/* Floating badge elements */}
               <div className="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
-                <Code className="text-security-accent w-6 h-6" />
-                <span className="font-medium text-sm">Secure Code</span>
+                <Star className="text-security-accent w-6 h-6" />
+                <span className="font-medium text-sm">Professional</span>
               </div>
               
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
-                <Lock className="text-security-primary w-6 h-6" />
-                <span className="font-medium text-sm">Vulnerability Assessment</span>
+                <Star className="text-security-primary w-6 h-6" />
+                <span className="font-medium text-sm">Secure Solutions</span>
               </div>
             </div>
           </div>
