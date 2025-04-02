@@ -1,48 +1,22 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 215 30% 98%;
+    --background: 210 20% 98%;
     --foreground: 215 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --primary: 220 98% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --accent: 150 70% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --primary: 200 98% 45%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 15% 95%;
-    --secondary-foreground: 215 25% 20%;
-
-    --muted: 210 15% 95%;
-    --muted-foreground: 215 15% 45%;
-
-    --accent: 183 85% 40%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 215 25% 25%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --security-dark: 220 30% 15%;
+    --security-primary: 210 100% 56%;
+    --security-light: 210 20% 98%;
+    --security-accent: 150 70% 45%;
   }
 
   * {
@@ -74,5 +48,9 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .vibrant-gradient {
+    @apply bg-gradient-to-r from-primary to-accent;
   }
 }
