@@ -1,7 +1,6 @@
 
 import { Award, Star } from "lucide-react";
 import { useState } from "react";
-import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card";
 
 const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,20 +20,18 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-security-dark">
               Hi, I'm 
               <div className="relative inline-block ml-2">
-                <HoverCard openDelay={0} closeDelay={100}>
-                  <HoverCardTrigger asChild>
-                    <span 
-                      className="security-gradient bg-clip-text text-transparent cursor-pointer"
-                      onMouseEnter={() => setIsHovered(true)}
-                      onMouseLeave={() => setIsHovered(false)}
-                    >
-                      Mahendhar Reddy
-                    </span>
-                  </HoverCardTrigger>
-                  <HoverCardContent className="p-0 border-none bg-transparent shadow-none w-auto">
-                    <span className="security-gradient bg-clip-text text-transparent">Kadari</span>
-                  </HoverCardContent>
-                </HoverCard>
+                <span 
+                  className="security-gradient bg-clip-text text-transparent cursor-pointer"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  Mahendhar Reddy
+                  <span 
+                    className={`transition-all duration-300 ${
+                      isHovered ? "opacity-100 max-w-[200px]" : "opacity-0 max-w-0"
+                    } overflow-hidden inline-block`}
+                  > Kadari</span>
+                </span>
               </div>
             </h1>
             
