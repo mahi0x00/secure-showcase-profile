@@ -18,8 +18,59 @@ import {
   FileCode,
   Database,
   Network,
-  Workflow
+  Workflow,
+  CheckCircle,
+  Webhook,
+  Cloud,
+  ServerCrash,
+  Wrench,
+  Search,
+  BrainCircuit
 } from 'lucide-react';
+
+const Tools = () => {
+  return (
+    <div className="mt-12 pt-8 border-t border-gray-100">
+      <h3 className="text-2xl font-semibold text-security-dark mb-6 text-center">Tools & Technologies</h3>
+      
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 justify-items-center">
+        {[
+          { name: "Burp Suite", icon: "/tools/burpsuite.svg", category: "testing" },
+          { name: "OWASP ZAP", icon: "/tools/owasp.svg", category: "testing" },
+          { name: "SonarQube", icon: "/tools/sonarqube.svg", category: "development" },
+          { name: "Checkmarx", icon: "/tools/checkmarx.svg", category: "development" },
+          { name: "Veracode", icon: "/tools/veracode.svg", category: "testing" },
+          { name: "Fortify", icon: "/tools/fortify.svg", category: "development" },
+          { name: "Docker", icon: "/tools/docker.svg", category: "deployment" },
+          { name: "Kubernetes", icon: "/tools/kubernetes.svg", category: "deployment" },
+          { name: "Jenkins", icon: "/tools/jenkins.svg", category: "deployment" },
+          { name: "GitHub", icon: "/tools/github.svg", category: "development" },
+          { name: "Jira", icon: "/tools/jira.svg", category: "requirements" },
+          { name: "Wireshark", icon: "/tools/wireshark.svg", category: "testing" },
+        ].map((tool) => (
+          <div 
+            key={tool.name}
+            className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 w-full"
+          >
+            <div className="w-12 h-12 mb-2 flex items-center justify-center">
+              <img 
+                src={tool.icon} 
+                alt={`${tool.name} logo`} 
+                className="max-w-full max-h-full object-contain"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.onerror = null;
+                  target.src = "/placeholder.svg";
+                }}
+              />
+            </div>
+            <span className="text-sm font-medium text-center text-security-dark">{tool.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -208,6 +259,8 @@ const Skills = () => {
             );
           })}
         </div>
+        
+        <Tools />
       </div>
     </section>
   );
