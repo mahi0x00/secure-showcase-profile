@@ -13,9 +13,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="w-full md:w-1/2 space-y-6 animate-fade-in">
-            <div className="inline-block px-3 py-1 bg-security-primary/10 rounded-full">
-              <p className="text-security-primary text-sm font-medium">HERO</p>
-            </div>
+
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-security-dark">
               Hi, I'm 

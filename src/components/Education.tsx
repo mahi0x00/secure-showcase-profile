@@ -5,15 +5,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Education = () => {
   const educationList = [
     {
-      degree: "Master of Science in Cybersecurity",
-      institution: "Stanford University",
-      period: "2014 - 2016",
+      degree: "Master of Technology in Software Systems",
+      institution: "Birla Institute of Technology and Science, Pilani",
+      period: "2024 - 2016(Tentative)",
       description: "Specialized in application security and secure software development lifecycles. Graduated with honors."
     },
     {
       degree: "Bachelor of Science in Computer Science",
-      institution: "University of California, Berkeley",
-      period: "2010 - 2014",
+      institution: "Jawaharal Nehru Technological University, Hyderabad",
+      period: "2007 - 2011",
       description: "Focused on software engineering and information security. Dean's List for 6 consecutive semesters."
     }
   ];
