@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X, Shield } from "lucide-react";
 
@@ -38,11 +37,10 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#" className="flex items-center gap-2 text-security-dark font-bold text-xl">
               <Shield className="h-6 w-6 text-security-primary" />
-              <span>John Secure</span>
+              <span>Mahendhar Reddy Kadari</span>
             </a>
           </div>
           
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
               {navLinks.map((link) => (
@@ -57,7 +55,6 @@ const Navbar = () => {
             </div>
           </div>
           
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -70,7 +67,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu, show/hide based on menu state */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
