@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#" className="flex items-center gap-2 text-security-dark font-bold text-xl">
               <Shield className="h-6 w-6 text-security-primary" />
-              <span>SecPortfolio</span>
+              <span>John Secure</span>
             </a>
           </div>
           

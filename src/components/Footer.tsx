@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
             <Shield className="h-6 w-6 text-security-primary mr-2" />
-            <span className="text-xl font-bold">SecPortfolio</span>
+            <span className="text-xl font-bold">John Secure</span>
           </div>
           
           <div className="text-center md:text-right">
@@ -20,7 +20,7 @@ const Footer = () => {
               <span>and secure code</span>
             </div>
             <p className="text-sm text-gray-400">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} John Secure. All rights reserved.
             </p>
           </div>
         </div>
