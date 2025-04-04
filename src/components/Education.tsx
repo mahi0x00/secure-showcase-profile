@@ -7,7 +7,7 @@ const Education = () => {
     {
       degree: "Master of Technology in Software Systems",
       institution: "Birla Institute of Technology and Science, Pilani",
-      period: "2024 - 2016(Tentative)",
+      period: "2014 - 2016",
       description: "Specialized in application security and secure software development lifecycles. Graduated with honors."
     },
     {
